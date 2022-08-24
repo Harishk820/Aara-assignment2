@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
 
+import React, { useEffect, useState } from 'react';
+import Task from './Task';
+
+
 function App() {
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br /><br />
+      <h1>Arra assignment</h1>
+
+      <Task />
     </div>
+
   );
 }
 
 export default App;
+
+
+
