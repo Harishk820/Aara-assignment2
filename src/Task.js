@@ -38,9 +38,9 @@ function Task() {
                                     <>
 
                                         <div className="card" style={{ display: "inline-block", width: "15rem" }}>
-                                            <img src={Apidata.Image} style={{ width: "18rem", height: "10rem" }} className="card-img-top, img-fluid" alt="image" />
+                                            <img key={Apidata.TopCategoryId} src={Apidata.Image} style={{ width: "18rem", height: "10rem" }} className="card-img-top, img-fluid" alt="image" />
                                             <div className="card-body">
-                                                <h5 className="card-title">{Apidata.TopCategoryName}</h5>
+                                                <h5 key={Apidata.TopCategoryId} className="card-title">{Apidata.TopCategoryName}</h5>
                                             </div>
                                         </div>
 
