@@ -28,16 +28,17 @@ function Task() {
 
 
             <div className="container">
-                <div className="row">
-                    <div className="col">
+                <div className=" row ">
+                    <div className="d-flex flex-wrap justify-content-center">
 
 
                         {
                             users.map((Apidata, i) => {
                                 return (
                                     <>
+
                                         <div className="card" style={{ display: "inline-block", width: "15rem" }}>
-                                            <img src={Apidata.Image} className="card-img-top" alt="image" />
+                                            <img src={Apidata.Image} style={{ width: "18rem", height: "10rem" }} className="card-img-top, img-fluid" alt="image" />
                                             <div className="card-body">
                                                 <h5 className="card-title">{Apidata.TopCategoryName}</h5>
                                             </div>
@@ -48,10 +49,11 @@ function Task() {
                             })
 
                         }
-
                     </div>
+
                 </div>
             </div>
+
 
 
 
@@ -66,3 +68,4 @@ function Task() {
 }
 
 export default Task;
+// card-img-top  
